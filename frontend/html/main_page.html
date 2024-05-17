@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Доска объявлений</title>
+    <link rel="stylesheet" href="frontend/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Доска объявлений</h1>
+        
+        <div class="add-bulletin">
+            <h2>Добавить объявление</h2>
+            <form id="addBulletinForm">
+                <div class="form-group">
+                    <label for="title">Заголовок:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">Текст:</label>
+                    <textarea id="content" name="content" class="content" required></textarea>
+                </div>                
+                <button type="submit">Добавить</button>
+            </form>
+        </div>
+
+        <div class="bulletin-list" id="bulletinContainer">
+            <h2>Список объявлений</h2>
+        </div>
+    </div>
+
+    <script src="frontend/js/scripts.js"></script>
+</body>
+</html>
